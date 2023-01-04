@@ -1,0 +1,16 @@
+deploy:
+  compose: docker-compose.yml
+
+dev:
+  hello-world1:
+    command: npm install & npm start
+    sync:
+      - hello-world1:/usr/src/app
+    forward:
+      - 9229:9229
+  hello-world2:
+    command: npm install & npm start
+    sync:
+      - hello-world2:/usr/src/app
+    forward:
+      - 9339:9229

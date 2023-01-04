@@ -1,2 +1,5 @@
-# shared-node-modules
-A sample to share node modules between different containers
+# Compose and nodejs getting started
+
+Deploy with `okteto deploy --build`.
+
+Enable dev mode with with `okteto up`.

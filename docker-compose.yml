@@ -1,0 +1,17 @@
+endpoints:
+  - path: /hello-world1
+    service: hello-world1
+    port: 3000
+  - path: /hello-world2
+    service: hello-world2
+    port: 3000
+
+services:
+  hello-world1:
+    build:
+      context: hello-world1
+      dockerfile: Dockerfile
+  hello-world2:
+    build:
+      context: hello-world2
+      dockerfile: Dockerfile
